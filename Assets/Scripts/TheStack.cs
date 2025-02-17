@@ -35,6 +35,9 @@ public class TheStack : MonoBehaviour{
     [SerializeField]
     private Text _scoreText;
 
+    [SerializeField]
+    private Text _startPanel;
+
     private bool isGameStarted = false;
 
     void Start(){
@@ -58,6 +61,8 @@ public class TheStack : MonoBehaviour{
         if (Input.GetMouseButtonDown(0)){
             if(!isGameStarted){
                 isGameStarted = true;
+                _scoreText.gameObject.SetActive(true);
+                _startPanel.gameObject.SetActive(false);
                return;
             }
             if (PlaceTile() && isGameStarted){
