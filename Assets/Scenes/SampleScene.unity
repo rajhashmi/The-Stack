@@ -591,6 +591,7 @@ MonoBehaviour:
     rgba: 8854271
   stackMat: {fileID: 2100000, guid: 9214cff14acebfb409096f17f6089487, type: 2}
   _scoreText: {fileID: 1198835601}
+  _startPanel: {fileID: 1911120339}
 --- !u!4 &597768837
 Transform:
   m_ObjectHideFlags: 0
